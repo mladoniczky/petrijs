@@ -1,3 +1,1 @@
-import HelloWorld from "./helloWorld";
-
-new HelloWorld("Milan");
+export * from 'petriNet/PetriNet';
