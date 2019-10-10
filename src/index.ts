@@ -1,1 +1,2 @@
-export * from 'petriNet/PetriNet';
+export * from 'petriNet/index';
+export * from 'event/index';
