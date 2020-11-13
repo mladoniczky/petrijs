@@ -1,6 +1,7 @@
-import IObserver from "./IObserver";
+import {IObserver} from "./IObserver";
+import {Event} from "./Event";
 
-export default interface IObservable {
+export interface IObservable {
     readonly observers: Map<string, IObserver[]>;
 
     on(event: string, observer: IObserver): IObservable;

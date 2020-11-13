@@ -1,4 +1,4 @@
-export default abstract class Event {
+export abstract class Event {
     readonly id: string;
     readonly type: string;
     message: string;

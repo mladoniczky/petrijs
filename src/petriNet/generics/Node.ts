@@ -1,8 +1,8 @@
-import Observable from "../../event/Observable";
+import {Observable} from "../../event";
 
-export default abstract class Node extends Observable {
+export abstract class Node extends Observable {
 
-    constructor(private _id: string, public title: string) {
+    protected constructor(private _id: string, public title: string) {
         super();
     }
 
