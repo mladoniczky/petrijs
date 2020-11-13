@@ -1,7 +1,8 @@
-import IObservable from "./IObservable";
-import IObserver from "./IObserver";
+import {IObservable} from "./IObservable";
+import {IObserver} from "./IObserver";
+import {Event} from "./Event";
 
-export default abstract class Observable implements IObservable {
+export abstract class Observable implements IObservable {
     readonly observers: Map<string, IObserver[]>;
 
     constructor() {

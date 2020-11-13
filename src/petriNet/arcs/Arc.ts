@@ -1,6 +1,6 @@
-import Node from '../generics/Node';
+import {Node} from '../generics/Node';
 
-export default class Arc<T extends Node, R extends Node> {
+export class Arc<T extends Node, R extends Node> {
 
     constructor(private _id: string, private _source: T, private _target: R) {
     }

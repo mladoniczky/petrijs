@@ -1,5 +1,5 @@
-import Transition from "./Transition";
-import Place from "./Place";
+import {Transition} from "./Transition";
+import {Place} from "./Place";
 
 export default class PetriNet {
 
@@ -12,7 +12,7 @@ export default class PetriNet {
     }
 
     public recalculateStates(): void {
-        this._transitions.forEach(transition => transition.checkStateChange());
+        this._transitions.forEach(transition => transition.test());
     }
 
     public fireTransition(transition: string) {
